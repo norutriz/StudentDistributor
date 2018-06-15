@@ -117,6 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPage1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="richTextBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPage2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="richTextBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPage3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="richTextBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPage4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="richTextBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>Fișierul de intrare care conține numele elevilor și, după caz media, trebuie să fie formatat precum urmează.
+
+Pe prima coloană a fișierului se vor afla numele elevilor iar pe a doua, dacă este nevoie, media.</value>
+  </data>
+  <metadata name="richTextBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>Butonul cu textul "Import" este folosit pentru a încărca datele despre elevi dintr-un fisier de tip excel.
 
@@ -124,4 +162,33 @@ Când este apăsat butonul se va deschide o nouă fereastră care va permite că
 
 După ce este selectat fișierul dorit se vor încărca numele elevilor și vor fi afișate în coloana adiacentă butonului.</value>
   </data>
+  <metadata name="richTextBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>Butonul cu textul "Distribuie" este folosit pentru a distribui elevii care au fost deja importați în aplicație pe clase.
+
+Când este apăsat butonul elevii vor fi ditribuiți pe clase. Distribuția va fi pe baza mediei, dacă este selectată căsuță cu textul "Distribuție după medie", sau aleatoriu în caz contrar.
+
+Elevii distribuiți vor fi afișați în listele adiacente fiecărei clase. Se vor forma trei clase dacă cea de a patra nu are dat un nume și un număr de elevi, patru clase în caz contrar.
+
+Dacă nu se specifică numărul de elevi per clasă sau acesta este mai mare decât numărul de elevi importați, sau nu se specifică numele clasei se vor afișa mesajele de avertizare corespunzătoare.
+
+Numele clasei se specifică deasupra listei, în dreptul cuvântului "Clasa". Numărul de elevi doriți per clasă se va scrie sub listele cu elevi, în dreptul cuvintelor "Nr. elevi".</value>
+  </data>
+  <metadata name="richTextBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>Butonul cu textul "Export" este folosit pentru a exporta distribuirea elevilor într-un fișier de tip Excel.
+
+Când este apăsat butonul se va deschide o fereastră care permite alegerea locului de salvare a fișierului precum și numele acestuia.
+
+Fișierul va conține antetul școlii, titlul "Distribuție elevi pe clase", un cap de tabel și distribuția propriu-zisă a elevilor.
+
+Dacă un elev nu este repartizat va avea în loc de clasă mențiunea "Nerepartizat".</value>
+  </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

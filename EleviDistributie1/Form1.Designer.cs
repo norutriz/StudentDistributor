@@ -53,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkBoxMedie = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonImport
@@ -252,11 +253,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // checkBoxMedie
+            // 
+            this.checkBoxMedie.AutoSize = true;
+            this.checkBoxMedie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMedie.Location = new System.Drawing.Point(677, 386);
+            this.checkBoxMedie.Name = "checkBoxMedie";
+            this.checkBoxMedie.Size = new System.Drawing.Size(168, 21);
+            this.checkBoxMedie.TabIndex = 27;
+            this.checkBoxMedie.Text = "Distributie dupa medie";
+            this.checkBoxMedie.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 452);
+            this.Controls.Add(this.checkBoxMedie);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -280,7 +293,7 @@
             this.Controls.Add(this.listBoxElevi);
             this.Controls.Add(this.buttonImport);
             this.Name = "Form1";
-            this.Text = "Distributie elevi CNI \"Traian Lalescu\" Hunedoara";
+            this.Text = "Student distributor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,6 +325,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBoxMedie;
     }
 }
 
