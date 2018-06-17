@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Excel = Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Interop.Excel;
-using System.Data.SqlClient;
 
 namespace EleviDistributie1
 {
@@ -374,8 +373,19 @@ namespace EleviDistributie1
                 return;
             }
 
-            if(sigla != null)
-                ExcelWorksheet.Shapes.AddPicture(sigla, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoCTrue, 0, 0, 35, 50);
+            if (checkBox1.Checked.Equals(false))
+                if(sigla != null)
+                    ExcelWorksheet.Shapes.AddPicture(sigla, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoCTrue, 0, 0, 35, 50);
+                else
+                    try
+                    {
+                        sigla = System.IO.File.ReadAllText("info.txt");
+                        ExcelWorksheet.Shapes.AddPicture(sigla, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoCTrue, 0, 0, 35, 50);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Nu ati selectat o sigla!");
+                    }
 
             int contor = 6;
             ExcelWorksheet.Cells[2, 5] = "Colegiul Național de Informatică 'Traian Lalescu' Hunedoara";
@@ -488,7 +498,11 @@ namespace EleviDistributie1
             {
                 sigla = openFileDialog2.FileName;
             }
+
+            System.IO.File.WriteAllText("info.txt", sigla);
         }
+
+        
     }
 
 }
