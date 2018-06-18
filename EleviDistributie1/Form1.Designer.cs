@@ -1,4 +1,6 @@
-﻿namespace EleviDistributie1
+﻿using System;
+
+namespace EleviDistributie1
 {
     partial class Form1
     {
@@ -57,6 +59,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonImport
@@ -122,9 +125,12 @@
             // 
             this.textBoxEleviA.Location = new System.Drawing.Point(378, 352);
             this.textBoxEleviA.Name = "textBoxEleviA";
+            this.textBoxEleviA.ShortcutsEnabled = false;
             this.textBoxEleviA.Size = new System.Drawing.Size(40, 20);
             this.textBoxEleviA.TabIndex = 11;
             this.textBoxEleviA.Click += new System.EventHandler(this.TextBoxEleviA_Click);
+            this.textBoxEleviA.TextChanged += new System.EventHandler(this.textBoxEleviA_TextChanged);
+            this.textBoxEleviA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEleviA_KeyPress);
             // 
             // label5
             // 
@@ -148,9 +154,12 @@
             // 
             this.textBoxEleviB.Location = new System.Drawing.Point(508, 352);
             this.textBoxEleviB.Name = "textBoxEleviB";
+            this.textBoxEleviB.ShortcutsEnabled = false;
             this.textBoxEleviB.Size = new System.Drawing.Size(40, 20);
             this.textBoxEleviB.TabIndex = 13;
             this.textBoxEleviB.Click += new System.EventHandler(this.TextBoxEleviB_Click);
+            this.textBoxEleviB.TextChanged += new System.EventHandler(this.textBoxEleviB_TextChanged);
+            this.textBoxEleviB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEleviB_KeyPress);
             // 
             // label7
             // 
@@ -165,9 +174,12 @@
             // 
             this.textBoxEleviC.Location = new System.Drawing.Point(630, 352);
             this.textBoxEleviC.Name = "textBoxEleviC";
+            this.textBoxEleviC.ShortcutsEnabled = false;
             this.textBoxEleviC.Size = new System.Drawing.Size(40, 20);
             this.textBoxEleviC.TabIndex = 15;
             this.textBoxEleviC.Click += new System.EventHandler(this.TextBoxEleviC_Click);
+            this.textBoxEleviC.TextChanged += new System.EventHandler(this.textBoxEleviC_TextChanged);
+            this.textBoxEleviC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEleviC_KeyPress);
             // 
             // buttonExport
             // 
@@ -213,9 +225,12 @@
             // 
             this.textBoxEleviD.Location = new System.Drawing.Point(756, 352);
             this.textBoxEleviD.Name = "textBoxEleviD";
+            this.textBoxEleviD.ShortcutsEnabled = false;
             this.textBoxEleviD.Size = new System.Drawing.Size(40, 20);
             this.textBoxEleviD.TabIndex = 22;
             this.textBoxEleviD.Click += new System.EventHandler(this.TextBoxEleviD_Click);
+            this.textBoxEleviD.TextChanged += new System.EventHandler(this.textBoxEleviD_TextChanged);
+            this.textBoxEleviD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEleviD_KeyPress);
             // 
             // listBoxEleviD
             // 
@@ -270,7 +285,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(806, 73);
+            this.button2.Location = new System.Drawing.Point(806, 124);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 29);
             this.button2.TabIndex = 28;
@@ -285,18 +300,30 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(816, 109);
+            this.checkBox1.Location = new System.Drawing.Point(816, 160);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(71, 17);
             this.checkBox1.TabIndex = 29;
             this.checkBox1.Text = "Fara sigla";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(806, 74);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 44);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "Unitate de invatamant";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 452);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBoxMedie);
@@ -329,6 +356,16 @@
 
         }
 
+        private void TextBoxEleviA_KeyPress(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void textBoxEleviA_KeyPress(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Button buttonImport;
@@ -359,6 +396,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

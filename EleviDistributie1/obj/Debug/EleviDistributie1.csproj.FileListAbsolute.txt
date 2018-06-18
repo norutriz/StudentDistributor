@@ -41,3 +41,4 @@ D:\Infoeducatia2018\EleviDistributie1\EleviDistributie1\obj\Debug\EleviDistribut
 D:\Infoeducatia2018\EleviDistributie1\EleviDistributie1\obj\Debug\EleviDistributie1.application
 D:\Infoeducatia2018\EleviDistributie1\EleviDistributie1\obj\Debug\EleviDistributie1.exe
 D:\Infoeducatia2018\EleviDistributie1\EleviDistributie1\obj\Debug\EleviDistributie1.pdb
+E:\00Programare\Infoeducatia2018\EleviDistributie1\EleviDistributie1\obj\Debug\EleviDistributie1.Form3.resources
