@@ -36,6 +36,7 @@ namespace EleviDistributie1
             listBoxElevi.Items.Clear();
             string file = null;
             openFileDialog1.Filter = "Microsoft Excel 97-2003 (*.xls)|*.xls|Microsoft Excel (*.xlsx)|*.xlsx";
+            openFileDialog1.FileName = "";
             DialogResult result = openFileDialog1.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -107,6 +108,7 @@ namespace EleviDistributie1
             }                
         }
 
+        
         //se distribuie random pe clase elevii din listBoxElevi
         private void ButtonDistributie_Click(object sender, EventArgs e)
         {
@@ -379,7 +381,7 @@ namespace EleviDistributie1
                 else
                     try
                     {
-                        sigla = System.IO.File.ReadAllText("info.txt");
+                        sigla = System.IO.File.ReadAllText("sigla.txt");
                         ExcelWorksheet.Shapes.AddPicture(sigla, Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState.msoCTrue, 0, 0, 35, 50);
                     }
                     catch
@@ -388,7 +390,7 @@ namespace EleviDistributie1
                     }
 
             int contor = 6;
-            ExcelWorksheet.Cells[2, 5] = "Colegiul Național de Informatică 'Traian Lalescu' Hunedoara";
+            ExcelWorksheet.Cells[2, 5] = System.IO.File.ReadAllText("nume.txt");
             ExcelWorksheet.Cells[3, 7] = "Distribuție elevi pe clase";
             ExcelWorksheet.Cells[6, 1] = "Nr. crt";
             ExcelWorksheet.Cells[6, 2] = "Nume și prenume";
@@ -492,6 +494,7 @@ namespace EleviDistributie1
         {
             
             openFileDialog2.Filter = "Bitmap image (*.bmp)|*.bmp|JPEG image (*.jpg)|*.jpg|Portable network graphics (*.png)|*.png";
+            openFileDialog2.FileName = "";
             DialogResult result = openFileDialog2.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -499,10 +502,78 @@ namespace EleviDistributie1
                 sigla = openFileDialog2.FileName;
             }
 
-            System.IO.File.WriteAllText("info.txt", sigla);
+            System.IO.File.WriteAllText("sigla.txt", sigla);
         }
 
-        
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+        private void textBoxEleviA_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxEleviA.Text, "  ^ [0-9]"))
+            {
+                textBoxEleviA.Text = "";
+            }
+        }
+
+        private void textBoxEleviA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxEleviB_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxEleviB.Text, "  ^ [0-9]"))
+            {
+                textBoxEleviB.Text = "";
+            }
+        }
+
+        private void textBoxEleviB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxEleviC_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxEleviC.Text, "  ^ [0-9]"))
+            {
+                textBoxEleviC.Text = "";
+            }
+        }
+
+        private void textBoxEleviC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxEleviD_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxEleviD.Text, "  ^ [0-9]"))
+            {
+                textBoxEleviD.Text = "";
+            }
+        }
+
+        private void textBoxEleviD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
     }
 
 }
