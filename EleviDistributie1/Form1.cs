@@ -33,7 +33,10 @@ namespace EleviDistributie1
         List<float> listaMediiElevi = new List<float>();
         private void ButtonImport_Click(object sender, EventArgs e)
         {
+            listaElevi.Clear();
             listBoxElevi.Items.Clear();
+            listaEleviNeDistribuiti.Clear();
+            listaMediiElevi.Clear();
             string file = null;
             openFileDialog1.Filter = "Microsoft Excel 97-2003 (*.xls)|*.xls|Microsoft Excel (*.xlsx)|*.xlsx";
             openFileDialog1.FileName = "";
@@ -81,7 +84,6 @@ namespace EleviDistributie1
                             listaMediiElevi.Add(medieElev);
                             listBoxElevi.Items.Add(numeElev);
                             listaElevi.Add(numeElev);
-                            listaEleviNeDistribuiti.Add(numeElev);
                         }
                         catch
                         {
@@ -112,6 +114,7 @@ namespace EleviDistributie1
         //se distribuie random pe clase elevii din listBoxElevi
         private void ButtonDistributie_Click(object sender, EventArgs e)
         {
+            listaEleviNeDistribuiti = listaElevi.ToList(); //daca se distribuie de mai multe ori elevii nu apar cei nedistribuiti cum ar trebui
             if (!checkBoxMedie.Checked)
             {
                 listBoxEleviA.Items.Clear(); //daca se distribuie de mai multe ori se tot adauga la lista, asa oprim asta
