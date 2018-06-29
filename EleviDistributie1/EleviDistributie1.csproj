@@ -7,12 +7,12 @@
     <ProjectGuid>{0324C2CF-2BC9-49E8-86ED-4F816C9C8AD9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>EleviDistributie1</RootNamespace>
-    <AssemblyName>EleviDistributie1</AssemblyName>
+    <AssemblyName>StudentDistributor</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Infoeducatia2018\</PublishUrl>
+    <PublishUrl>E:\00Programare\Infoeducatia2018\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
