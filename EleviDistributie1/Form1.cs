@@ -122,13 +122,21 @@ namespace EleviDistributie1
                 listBoxEleviC.Items.Clear();
                 listBoxEleviD.Items.Clear();
 
-                int nrMaxEleviA = Convert.ToInt32(textBoxEleviA.Text);
-                int nrMaxEleviB = Convert.ToInt32(textBoxEleviB.Text);
-                int nrMaxEleviC = Convert.ToInt32(textBoxEleviC.Text);
-                int nrMaxEleviD = Convert.ToInt32(textBoxEleviD.Text);
-                int nrMaxEleviClase = nrMaxEleviA + nrMaxEleviB + nrMaxEleviC;
-                if (nrMaxEleviD > 0)                // nu avem tot timpul 4 clase
-                    nrMaxEleviClase += nrMaxEleviD;
+                int nrMaxEleviA = 0, nrMaxEleviB = 0, nrMaxEleviC = 0, nrMaxEleviD = 0, nrMaxEleviClase = 0;
+                if (!string.IsNullOrWhiteSpace(textBoxEleviA.Text) || !string.IsNullOrWhiteSpace(textBoxEleviB.Text) || !string.IsNullOrWhiteSpace(textBoxEleviC.Text))
+                {
+                    nrMaxEleviA = Convert.ToInt32(textBoxEleviA.Text);
+                    nrMaxEleviB = Convert.ToInt32(textBoxEleviB.Text);
+                    nrMaxEleviC = Convert.ToInt32(textBoxEleviC.Text);
+                    if (!string.IsNullOrWhiteSpace(textBoxEleviD.Text))
+                    {
+                        nrMaxEleviD = Convert.ToInt32(textBoxEleviD.Text);
+                    }
+
+                    nrMaxEleviClase = nrMaxEleviA + nrMaxEleviB + nrMaxEleviC;
+                    if (nrMaxEleviD > 0)                // nu avem tot timpul 4 clase
+                        nrMaxEleviClase += nrMaxEleviD;
+                }
 
                 while (nrMaxEleviClase > listaElevi.Count())
                 {
@@ -147,9 +155,9 @@ namespace EleviDistributie1
                     return;
                 }
 
-                if (nrMaxEleviClase <= 0)
+                if (nrMaxEleviClase <= 0 || Convert.ToInt32(textBoxEleviA.Text) == 0 || Convert.ToInt32(textBoxEleviB.Text) == 0 || Convert.ToInt32(textBoxEleviC.Text) == 0)
                 {
-                    MessageBox.Show("Nu ati dat numarul de elevi per clasa");
+                    MessageBox.Show("Nu ati dat numarul de elevi per clasă");
                     return;
                 }
 
@@ -161,6 +169,11 @@ namespace EleviDistributie1
                 if (Convert.ToInt32(textBoxEleviD.Text) > 0 && textBoxNumeD.Text == "")
                 {
                     MessageBox.Show("Nu ati dat numele claselor");
+                    return;
+                }
+                if (Convert.ToInt32(textBoxEleviD.Text) == 0 && textBoxNumeD.Text != "")
+                {
+                    MessageBox.Show("Nu ati dat numărul de elevi per clasă");
                     return;
                 }
 
@@ -237,13 +250,21 @@ namespace EleviDistributie1
                 listBoxEleviC.Items.Clear();
                 listBoxEleviD.Items.Clear();
 
-                int nrMaxEleviA = Convert.ToInt32(textBoxEleviA.Text);
-                int nrMaxEleviB = Convert.ToInt32(textBoxEleviB.Text);
-                int nrMaxEleviC = Convert.ToInt32(textBoxEleviC.Text);
-                int nrMaxEleviD = Convert.ToInt32(textBoxEleviD.Text);
-                int nrMaxEleviClase = nrMaxEleviA + nrMaxEleviB + nrMaxEleviC;
-                if (nrMaxEleviD > 0)                // nu avem tot timpul 4 clase
-                    nrMaxEleviClase += nrMaxEleviD;
+                int nrMaxEleviA = 0, nrMaxEleviB = 0, nrMaxEleviC = 0, nrMaxEleviD = 0, nrMaxEleviClase = 0;
+                if (!string.IsNullOrWhiteSpace(textBoxEleviA.Text) || !string.IsNullOrWhiteSpace(textBoxEleviB.Text) || !string.IsNullOrWhiteSpace(textBoxEleviC.Text))
+                {
+                    nrMaxEleviA = Convert.ToInt32(textBoxEleviA.Text);
+                    nrMaxEleviB = Convert.ToInt32(textBoxEleviB.Text);
+                    nrMaxEleviC = Convert.ToInt32(textBoxEleviC.Text);
+                    if (!string.IsNullOrWhiteSpace(textBoxEleviD.Text))
+                    {
+                        nrMaxEleviD = Convert.ToInt32(textBoxEleviD.Text);
+                    }
+
+                    nrMaxEleviClase = nrMaxEleviA + nrMaxEleviB + nrMaxEleviC;
+                    if (nrMaxEleviD > 0)                // nu avem tot timpul 4 clase
+                        nrMaxEleviClase += nrMaxEleviD;
+                }
 
                 while (nrMaxEleviClase > listaElevi.Count())
                 {
@@ -262,13 +283,13 @@ namespace EleviDistributie1
                     return;
                 }
 
-                if (nrMaxEleviClase <= 0)
+                if (nrMaxEleviClase <= 0 || Convert.ToInt32(textBoxEleviA.Text) == 0 || Convert.ToInt32(textBoxEleviB.Text) == 0 || Convert.ToInt32(textBoxEleviC.Text) == 0)
                 {
-                    MessageBox.Show("Nu ati dat numarul de elevi per clasa");
+                    MessageBox.Show("Nu ati dat numarul de elevi per clasă");
                     return;
                 }
                 
-                if (textBoxNumeA.Text == "" || textBoxNumeB.Text == "" || textBoxNumeC.Text == "")
+                if (textBoxNumeA.Text == "" || textBoxNumeB.Text == "" || textBoxNumeC.Text == "") 
                 {
                     MessageBox.Show("Nu ati dat numele claselor");
                     return;
@@ -276,6 +297,11 @@ namespace EleviDistributie1
                 if (Convert.ToInt32(textBoxEleviD.Text) > 0 && textBoxNumeD.Text == "")
                 {
                     MessageBox.Show("Nu ati dat numele claselor");
+                    return;
+                }
+                if (Convert.ToInt32(textBoxEleviD.Text) == 0 && textBoxNumeD.Text != "")
+                {
+                    MessageBox.Show("Nu ati dat numărul de elevi per clasă");
                     return;
                 }
 

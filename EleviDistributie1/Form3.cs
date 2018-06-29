@@ -29,5 +29,16 @@ namespace EleviDistributie1
             System.IO.File.WriteAllText("nume.txt", textBox1.Text);
             this.Close();
         }
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form3.ModifierKeys == Keys.None && keyData == Keys.Enter)
+            {
+                System.IO.File.WriteAllText("nume.txt", textBox1.Text);
+                this.Close();
+                return true;
+            }
+            return base.ProcessDialogKey(keyData);
+        }
     }
 }

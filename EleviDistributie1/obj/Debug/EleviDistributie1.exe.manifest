@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EleviDistributie1.exe" size="41936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EleviDistributie1.exe" size="42448">
       <assemblyIdentity name="EleviDistributie1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JS7MR+hfYfY9s/GWFfuN6uXlrJVG0XHA277OrxtYoXc=</dsig:DigestValue>
+        <dsig:DigestValue>7TUp8X1FFXV5VWaHph1FcHx/Ii0Ik9ZECiOmf16yINs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
