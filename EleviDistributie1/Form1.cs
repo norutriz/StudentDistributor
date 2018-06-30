@@ -35,8 +35,13 @@ namespace EleviDistributie1
         {
             listaElevi.Clear();
             listBoxElevi.Items.Clear();
+            listBoxEleviA.Items.Clear();
+            listBoxEleviB.Items.Clear();
+            listBoxEleviC.Items.Clear();
+            listBoxEleviD.Items.Clear();
             listaEleviNeDistribuiti.Clear();
             listaMediiElevi.Clear();
+
             string file = null;
             openFileDialog1.Filter = "Microsoft Excel 97-2003 (*.xls)|*.xls|Microsoft Excel (*.xlsx)|*.xlsx";
             openFileDialog1.FileName = "";
