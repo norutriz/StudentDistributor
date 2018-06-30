@@ -420,11 +420,23 @@ namespace EleviDistributie1
                     }
                     catch
                     {
-                        MessageBox.Show("Nu ati selectat o sigla!");
+                        MessageBox.Show("Nu ați selectat o sigla!");
+                        return;
                     }
 
             int contor = 6;
-            ExcelWorksheet.Cells[2, 5] = System.IO.File.ReadAllText("nume.txt");
+
+            try
+            {
+                string nume = System.IO.File.ReadAllText("nume.txt");
+                ExcelWorksheet.Cells[2, 5] = nume;
+            }
+            catch
+            {
+                MessageBox.Show("Nu ați dat numele școlii");
+                return;
+            }
+
             ExcelWorksheet.Cells[3, 7] = "Distribuție elevi pe clase";
             ExcelWorksheet.Cells[6, 1] = "Nr. crt";
             ExcelWorksheet.Cells[6, 2] = "Nume și prenume";
