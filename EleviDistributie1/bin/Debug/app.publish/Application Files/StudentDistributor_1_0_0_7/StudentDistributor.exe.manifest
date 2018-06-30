@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="StudentDistributor.exe" version="1.0.0.7" publicKeyToken="49c3a5743270f095" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="StudentDistributor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="StudentDistributor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentDistributor.exe" size="43472">
+      <assemblyIdentity name="StudentDistributor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kD46yIbPx7PgrJG6CDU7i9gqhn9wu3mt8vBckBhU0kk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="StudentDistributor.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MICHAEL-PC\Michael" issuerKeyHash="91f7109db137386891c38831f82ebbfdf3b70197" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>evzzurgV9Q4iPqY+0/vanpbLPCycVczCsFkXESQKeUA=</DigestValue></Reference></SignedInfo><SignatureValue>jS+exxgXz+/PrhWh+E0cwSFHjeeY20keuwxPdUxtQW/iNQvz7ASYaAi/0AH+PrRS0KqsKVGZlovuEqgQHFziMMvD20oWUJeEkUCmeth2NtoiTPyaHXbHbI9feGA4Vy9qckY4/bfp4KUvjawUg5ND3whKPzvh9ByvzXXv8tBgX4s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>trmbp63RJt6+Qth9g9bmeoh/owSNxfYsR+sKN3hVdVkE4WL3q3/vmJB2/QmxlXFA0dOmwhbqnhuVbL7NQoMpfK5kI1bsWK0VSf5ESkKljU7pl58J0NUcT2j8cX28WqrwkzpFO4Zc8XTxiBwzp5nIkHjlhsoeBQgrquEr8lkGczU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="40790a24111759b0c2cc559c2c3ccb969edafbd33ea63e220ef515b8baf3fc7a" Description="" Url=""><as:assemblyIdentity name="StudentDistributor.exe" version="1.0.0.7" publicKeyToken="49c3a5743270f095" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MICHAEL-PC\Michael</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZedBvn5KQwRteFZlabqgPAzg8gdN4hsowTBiwWagWOc=</DigestValue></Reference></SignedInfo><SignatureValue>E6BogbqUq0Z/tDNks5PvKe0uJFc6lWGrIhz1grOBgHQ4CbiH5M5HNsVeBYty+0Y69CQfqIGR6fyHwv0TiE0AW1HQ5p2CO9nNFCMALMqThoRmVddRkuyEga5MEaSdCZ+pUyWeoO+Wd411yoDnt9fGu/5ulJmK9F1uQK4+sw2BBN8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>trmbp63RJt6+Qth9g9bmeoh/owSNxfYsR+sKN3hVdVkE4WL3q3/vmJB2/QmxlXFA0dOmwhbqnhuVbL7NQoMpfK5kI1bsWK0VSf5ESkKljU7pl58J0NUcT2j8cX28WqrwkzpFO4Zc8XTxiBwzp5nIkHjlhsoeBQgrquEr8lkGczU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQZFe759txlaBDGnb16jFXtjANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATQBJAEMASABBAEUATAAtAFAAQwBcAE0AaQBjAGgAYQBlAGwwHhcNMTgwNTI4MDc0MTMyWhcNMTkwNTI4MTM0MTMyWjAvMS0wKwYDVQQDHiQATQBJAEMASABBAEUATAAtAFAAQwBcAE0AaQBjAGgAYQBlAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALa5m6et0SbevkLYfYPW5nqIf6MEjcX2LEfrCjd4VXVZBOFi96t/75iQdv0JsZVxQNHTpsIW6p4blWy+zUKDKXyuZCNW7FitFUn+REpCpY1O6ZefCdDVHE9o/HF9vFqq8JM6RTuGXPF08YgcM6eZyJB45YbKHgUIK6rhK/JZBnM1AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApo6PwvSbv/Fmi6ynhuuNMzXmZNCNgc6f7OmY4q7VDzO/vwHGUHVbbbI5Zb9F5WovhywVNESQFsDklp3oOmFuIJiV3krPRT72F4AESwH2p6Bod2tTcXWKPo6Yw3AAYUXQDtUGTerIOSbhd4iyLQMAViDk5Zo2vCYPKvCLe5F/it0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
